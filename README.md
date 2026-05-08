@@ -52,12 +52,12 @@ python3 get_wazuh_server_hour_events.py && python3 wazuh_soc_ml.py --mode global
 Once you have sufficient data, calculate the training limit and build the model:
 Bash
 
-## Get the total number of collected events
+### Get the total number of collected events
 ```
 sqlite3 /var/lib/soc_ai/events_ext_ueba.db "SELECT count(*) FROM events;"
 ```
 
-## Train the model (replace [LIMIT] with the count from above)
+### Train the model (replace [LIMIT] with the count from above)
 ```
 python3 wazuh_soc_ml.py --mode global --file /tmp/wazuh_server_hour_events.json --train-ml --train-limit [LIMIT]
 ```
