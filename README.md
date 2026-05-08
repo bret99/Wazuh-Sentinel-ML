@@ -98,16 +98,6 @@ If this tool helps protect your infrastructure, consider supporting the develope
 | **LTC** | Litecoin | `ltc1qkm58ks5kuc64rjwd74sfalc5xsn7h6sr4vt45w` |
 | **SOL** | Solana | `D7a5CdLaDwkKehnH82y6VJEF3hADWuupuhWCXecHvEnt` |
 
-### One-click Support
-<p align="left">
-  <a href="https://www.buymeacoffee.com/" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 181px !important;">
-  </a>
-  <a href="https://ko-fi.com/" target="_blank">
-    <img src="https://storage.ko-fi.com/cdn/kofi3.png?v=3" alt="Support Me on Ko-fi" style="height: 50px !important;width: 181px !important;">
-  </a>
-</p>
-
 ---
 
 📜 License
