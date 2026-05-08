@@ -1,0 +1,7 @@
+opensearch-py
+requests
+urllib3
+ijson
+numpy
+scikit-learn
+pathlib

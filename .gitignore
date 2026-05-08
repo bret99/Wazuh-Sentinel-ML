@@ -1,0 +1,20 @@
+# Credentials
+access_tokens.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+
+# Data & Models
+*.db
+*.db-journal
+*.lock
+*.pkl
+/tmp/*.json
+
+# Environments
+.venv/
+env/
+venv/
