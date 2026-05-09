@@ -11,6 +11,8 @@ IGNORE_RULE_GROUPS = [""] # insert actual volumes here
 LOG_FILE = "/tmp/wazuh_server_hour_events.json" # change if necessary
 MIN_RULE_LEVEL = 3 # change if necessary
 MAX_RULE_LEVEL = 15 # change if necessary
+NIGHT_START = 19 # change if necessary
+NIGHT_END = 3 # change if necessary
 # ====== VK TEAMS SETTINGS ======
 VK_TEAMS_TOKEN = '' # insert actual volume here
 VK_TEAMS_CHAT_ID = '' # insert actual volume here
