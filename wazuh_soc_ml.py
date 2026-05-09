@@ -36,16 +36,14 @@ warnings.filterwarnings("ignore")
 # Configuration
 try:
     from access_tokens import (
-        SMTP_SERVER, SMTP_PORT, EMAIL_FROM, EMAIL_PASSWORD, EMAIL_RECIPIENTS
+        SMTP_SERVER, SMTP_PORT, EMAIL_FROM, EMAIL_PASSWORD, EMAIL_RECIPIENTS, NIGHT_START, NIGHT_END
     )
 except ImportError:
     print("Error: access_tokens.py not found"); sys.exit(1)
 
 DB_PATH = Path("/var/lib/soc_ai/events_ext_ueba.db")
 ML_MODEL_PATH = Path("/var/lib/soc_ai/anomaly_model_ext_ueba.pkl")
-SQL_TIMEOUT = 300 
-NIGHT_START = 19
-NIGHT_END = 3
+SQL_TIMEOUT = 300
 
 RE_USER = re.compile(r'(?:user|srcuser|dstuser|username)[:\s=]+([a-z0-9\._\\\@\-]+)', re.IGNORECASE)
 RE_IP = re.compile(r'\b(?:\d{1,3}\.){3}\d{1,3}\b')
