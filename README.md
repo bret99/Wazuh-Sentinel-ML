@@ -34,6 +34,8 @@ Fill in your credentials in access_tokens.py:
     Wazuh / OpenSearch API credentials.
     SMTP settings for Email alerts.
     Bot tokens for Telegram and VK Teams.
+    Rules levels.
+    UEBA night hours.
 
 ## 📖 Operating Workflow
 
