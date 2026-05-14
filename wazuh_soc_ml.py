@@ -36,7 +36,7 @@ warnings.filterwarnings("ignore")
 # Configuration
 try:
     from access_tokens import (
-        SMTP_SERVER, SMTP_PORT, EMAIL_FROM, EMAIL_PASSWORD, EMAIL_RECIPIENTS, NIGHT_START, NIGHT_END
+        SMTP_SERVER, SMTP_PORT, EMAIL_FROM, EMAIL_PASSWORD, EMAIL_RECIPIENTS, NIGHT_START, NIGHT_END, DEFAULT_TRAIN_LIMIT
     )
 except ImportError:
     print("Error: access_tokens.py not found"); sys.exit(1)
@@ -326,7 +326,7 @@ def main():
     parser.add_argument('--mode', default='global')
     parser.add_argument('--send-alerts', action='store_true')
     parser.add_argument('--train-ml', action='store_true')
-    parser.add_argument('--train-limit', type=int, default=200000)
+    parser.add_argument('--train-limit', type=int, default=DEFAULT_TRAIN_LIMIT)
     args = parser.parse_args()
 
     analyzer = SOCAnalyzer()
