@@ -23,7 +23,7 @@
 
 ### 1. Clone & Dependencies
 ```bash
-git clone [https://github.com/your-username/Wazuh-Sentinel-ML.git](https://github.com/your-username/Wazuh-Sentinel-ML.git)
+git clone https://github.com/bret99/Wazuh-Sentinel-ML.git
 cd Wazuh-Sentinel-ML
 pip install -r requirements.txt
 ```
