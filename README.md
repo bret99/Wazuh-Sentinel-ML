@@ -51,8 +51,7 @@ python3 get_wazuh_server_hour_events.py && python3 wazuh_soc_ml.py --mode global
 ```
 ### Phase 2: ML Model Training
 
-Once you have sufficient data, calculate the training limit and build the model:
-Bash
+Once you have sufficient data, calculate the training limit and build the model.
 
 ### Get the total number of collected events
 ```
