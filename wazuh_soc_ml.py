@@ -90,7 +90,7 @@ class SOCAnalyzer:
     def __init__(self):
         self.detector = AdvancedAnomalyDetector()
 
-    def extract_user(self, event):
+    def extract_user(self, event): # substitute for actual ones
         d = event.get('data', {})
         win = d.get('win', {}).get('eventdata', {})
         fields = [
@@ -104,7 +104,7 @@ class SOCAnalyzer:
             if f and str(f).lower() not in ['unknown', '', '-', 'null', 'none']: return str(f)
         m = RE_USER.search(str(event.get('full_log', ''))); return m.group(1) if m else 'unknown'
 
-    def extract_ip(self, event):
+    def extract_ip(self, event): # substitute for actual ones
         d = event.get('data', {})
         fields = [
             event.get('srcip'), d.get('srcip'), event.get('src_ip'), d.get('src_ip'),
@@ -199,7 +199,7 @@ class SOCAnalyzer:
 
 def build_reports(stats, mode):
     now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    lvl8plus = sum(v for k, v in stats['levels'].items() if k >= 8)
+    lvl8plus = sum(v for k, v in stats['levels'].items() if k >= 8) # substitute for actual one
     anom_sorted = sorted(stats['anomalies'], key=lambda x: x['rule_level'], reverse=True)
     anom_hashes = {hashlib.md5(f"{a['timestamp']}{a['rule_id']}{a['user']}".encode()).hexdigest() for a in stats['anomalies']}
 
