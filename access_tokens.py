@@ -13,6 +13,8 @@ MIN_RULE_LEVEL = 3 # change if necessary
 MAX_RULE_LEVEL = 15 # change if necessary
 NIGHT_START = 19 # change if necessary
 NIGHT_END = 3 # change if necessary
+# ====== Default ML train limit ======
+DEFAULT_TRAIN_LIMIT = 200000 # change if necessary
 # ====== VK TEAMS SETTINGS ======
 VK_TEAMS_TOKEN = '' # insert actual volume here
 VK_TEAMS_CHAT_ID = '' # insert actual volume here
